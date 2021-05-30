@@ -1,0 +1,27 @@
+{
+  "name": "graphql-federation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:subgraph": "nodemon src/subgraph/index.js",
+    "start:subgraph2": "nodemon src/subgraph-2/index.js",
+    "start:gateway": "nodemon src/gateway/index.js",
+    "start:all": "npm run start:subgraph && npm run start:grateway"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/federation": "^0.25.1",
+    "@apollo/gateway": "^0.28.2",
+    "@graphql-tools/merge": "^6.2.14",
+    "apollo-datasource-rest": "^0.14.0",
+    "apollo-server": "^2.25.0",
+    "graphql": "^15.5.0",
+    "graphql-directive-auth": "^0.3.2",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.7",
+    "opossum": "^6.1.0"
+  }
+}
